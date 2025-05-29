@@ -20,23 +20,19 @@ export default function HomePage() {
       <div className="max-w-2xl mx-auto px-6 py-12">
         {/* Header */}
         <header className="text-center mb-12">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">DailyWisdom.org</h1>
-          <p className="text-lg text-gray-600 italic">Words of Wisdom, Day by Day</p>
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">ToiletTeacher.org</h1>
+          <p className="text-lg text-gray-600 italic">Closer to the Truth, One Flush at a Time</p>
         </header>
 
         {/* Main Content */}
         <main className="mb-12">
           <div className="bg-gray-50 p-8 rounded-lg border border-gray-200 mb-8">
             <p className="text-gray-800 leading-relaxed text-lg">
-              Welcome to your daily source of wisdom and inspiration. Each day brings new insights from great thinkers,
-              philosophers, and visionaries throughout history. Choose your path below to begin your journey of daily
-              reflection and growth.
+              Over the course of our lives, we spend a significant amount of time on the toilet. What if we used that time to get closer to the truth? Sound like a plan? Choose your toilet teacher below and bookmark the page. Enjoy!
             </p>
             <br />
             <p className="text-gray-700 leading-relaxed">
-              Whether you seek ancient wisdom or modern inspiration, our carefully curated collections offer timeless
-              truths that speak to the human experience. Let these words guide you toward greater understanding and
-              purpose.
+              Paragraph 2.
             </p>
           </div>
 
@@ -44,7 +40,7 @@ export default function HomePage() {
           <div className="space-y-4">
             <Select onValueChange={setSelectedPath}>
               <SelectTrigger className="w-full">
-                <SelectValue placeholder="Choose your daily journey" />
+                <SelectValue placeholder="Choose your toilet teacher" />
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="/wisdom">Ancient Wisdom</SelectItem>
@@ -60,8 +56,8 @@ export default function HomePage() {
 
         {/* Footer */}
         <footer className="text-center text-sm text-gray-500 border-t border-gray-200 pt-6">
-          <p>DailyWisdom.org displays a new quote each day for your enjoyment and enlightenment.</p>
-          <p className="mt-2">© 2025 DailyWisdom.org. All Rights Reserved.</p>
+          <p>Footer description.</p>
+          <p className="mt-2">Footer description 2</p>
         </footer>
       </div>
     </div>
