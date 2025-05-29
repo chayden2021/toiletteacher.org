@@ -17,8 +17,8 @@ export default function JesusPage() {
               ToiletTeacher.org
             </Link>
           </h1>
-          <p className="text-lg text-gray-600 italic mb-4">Jesus</p>
-          <p className="text-sm text-gray-500">{currentDate}</p>
+          <p className="text-2xl text-gray-600 italic mb-4">Jesus</p>
+          <p className="text-lg text-gray-500">{currentDate}</p>
         </header>
 
         {/* Main Content */}
