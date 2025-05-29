@@ -42,8 +42,8 @@ export default function HomePage() {
                 <SelectValue placeholder="Choose your toilet teacher" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="/wisdom">Ancient Wisdom</SelectItem>
-                <SelectItem value="/inspiration">Modern Inspiration</SelectItem>
+                <SelectItem value="/jesus">Jesus</SelectItem>
+                <SelectItem value="/buddha">Buddha</SelectItem>
               </SelectContent>
             </Select>
 
