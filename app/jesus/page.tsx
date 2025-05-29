@@ -12,12 +12,12 @@ export default function JesusPage() {
       <div className="max-w-2xl mx-auto px-6 py-12">
         {/* Header */}
         <header className="text-center mb-8">
-          <h1 className="text-2xl text-gray-900 mb-2">
+          <h1 className="text-3xl text-gray-900 mb-2">
             <Link href="/" className="hover:text-gray-700">
-              ToiletTeacher.org
+              Jesus
             </Link>
           </h1>
-          <p className="text-3xl text-gray-600 italic mb-4">Jesus</p>
+          <p className="text-lg text-gray-600 italic">ToiletTeacher.org</p>
           <p className="text-lg text-gray-500">{currentDate}</p>
         </header>
 
