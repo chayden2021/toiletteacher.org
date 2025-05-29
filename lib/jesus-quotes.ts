@@ -1,4 +1,4 @@
-export const wisdomQuotes = [
+export const jesusQuotes = [
   "The journey of a thousand miles begins with one step. - Lao Tzu",
   "Knowing others is intelligence; knowing yourself is true wisdom. - Lao Tzu",
   "The wise find pleasure in water; the virtuous find pleasure in hills. - Confucius",
