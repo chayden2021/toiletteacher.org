@@ -28,11 +28,11 @@ export default function HomePage() {
         <main className="mb-12">
           <div className="bg-gray-50 p-8 rounded-lg border border-gray-200 mb-8">
             <p className="text-gray-800 leading-relaxed text-lg">
-              Over the course of our lives, we spend a significant amount of time on the toilet. What if we used that time to get closer to the truth? Sound like a plan? Choose your toilet teacher below and bookmark the page. Enjoy!
+              Over the course of our lives, we spend a significant amount of time on the toilet. What if, instead of scrolling, we used that time to get closer to the truth? Sound like a good idea? Choose a teacher below and take a few deep breaths with their daily message. Feel free to bookmark your toilet teacher’s page. Enjoy!
             </p>
             <br />
             <p className="text-gray-700 leading-relaxed">
-              Paragraph 2.
+              ...
             </p>
           </div>
 
@@ -57,7 +57,7 @@ export default function HomePage() {
         {/* Footer */}
         <footer className="text-center text-sm text-gray-500 border-t border-gray-200 pt-6">
           <p>Footer description.</p>
-          <p className="mt-2">Footer description 2</p>
+          <p className="mt-2">This website was inspired by dailytao.org.</p>
         </footer>
       </div>
     </div>
