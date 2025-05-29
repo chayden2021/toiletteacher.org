@@ -30,10 +30,6 @@ export default function HomePage() {
             <p className="text-gray-800 leading-relaxed text-lg">
               We spend a lot of time on the toilet. What if we used that time to get closer to the Truth? Choose a toilet teacher below and take a few deep breaths with their daily message. Feel free to bookmark their page. Enjoy!
             </p>
-            <br />
-            <p className="text-gray-700 leading-relaxed">
-            </p>
-          </div>
 
           {/* Navigation */}
           <div className="space-y-4">
