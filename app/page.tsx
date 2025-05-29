@@ -43,7 +43,7 @@ export default function HomePage() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="/jesus">Jesus</SelectItem>
-                <SelectItem value="/buddha">Buddha</SelectItem>
+                <SelectItem value="/buddha">The Buddha</SelectItem>
               </SelectContent>
             </Select>
 
@@ -55,8 +55,8 @@ export default function HomePage() {
 
         {/* Footer */}
         <footer className="text-center text-sm text-gray-500 border-t border-gray-200 pt-6">
-          <p>This website was inspired by dailytao.org.</p>
-          <p className="mt-2">And I haven't figured out what to write here yet.</p>
+          <p>This website was inspired by DailyTao.org.</p>
+          <p className="mt-2">...</p>
         </footer>
       </div>
     </div>
