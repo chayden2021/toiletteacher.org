@@ -27,7 +27,7 @@ export default function HomePage() {
         {/* Main Content */}
         <main className="mb-12">
           <p className="text-center text-gray-800 leading-relaxed text-lg mb-8">
-            We spend a lot of time on the toilet. What if we used that time to get closer to the Truth? Choose a toilet teacher below and take a few deep breaths with their daily message. Feel free to bookmark their page. Enjoy!
+            We spend a lot of time on the toilet. What if we spent that time getting closer to the Truth? Pick a toilet teacher and take a few deep breaths with their daily message.
           </p>
 
           {/* Navigation */}
