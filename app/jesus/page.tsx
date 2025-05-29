@@ -37,7 +37,7 @@ export default function JesusPage() {
 
         {/* Footer */}
         <footer className="text-center text-sm text-gray-500 border-t border-gray-200 pt-6">
-          <p>This website was inspired by DailyTao.org.</p>
+          <p>This web page was inspired by DailyTao.org.</p>
           <p className="mt-2">...</p>
         </footer>
       </div>
