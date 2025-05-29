@@ -43,7 +43,6 @@ export default function HomePage() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="/jesus">Jesus</SelectItem>
-                <SelectItem value="/buddha">The Buddha</SelectItem>
               </SelectContent>
             </Select>
 

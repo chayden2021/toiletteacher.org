@@ -1,10 +1,10 @@
 import Link from "next/link"
-import { wisdomQuotes } from "@/lib/wisdom-quotes"
+import { jesusQuotes } from "@/lib/jesus-quotes"
 import { getDailyQuote, getCurrentDate } from "@/lib/quote-utils"
 import { Button } from "@/components/ui/button"
 
-export default function WisdomPage() {
-  const dailyQuote = getDailyQuote(wisdomQuotes)
+export default function JesusPage() {
+  const dailyQuote = getDailyQuote(jesusQuotes)
   const currentDate = getCurrentDate()
 
   return (
@@ -12,9 +12,9 @@ export default function WisdomPage() {
       <div className="max-w-2xl mx-auto px-6 py-12">
         {/* Header */}
         <header className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">
+          <h1 className="text-3xl text-gray-900 mb-2">
             <Link href="/" className="hover:text-gray-700">
-              DailyWisdom.org
+              ToiletTeacher.org
             </Link>
           </h1>
           <p className="text-lg text-gray-600 italic mb-4">Ancient Wisdom</p>
@@ -37,8 +37,8 @@ export default function WisdomPage() {
 
         {/* Footer */}
         <footer className="text-center text-sm text-gray-500 border-t border-gray-200 pt-6">
-          <p>Ancient wisdom from great philosophers and thinkers throughout history.</p>
-          <p className="mt-2">© 2025 DailyWisdom.org. All Rights Reserved.</p>
+          <p>This website was inspired by DailyTao.org.</p>
+          <p className="mt-2">...</p>
         </footer>
       </div>
     </div>
