@@ -20,7 +20,7 @@ export default function HomePage() {
       <div className="max-w-2xl mx-auto px-6 py-12">
         {/* Header */}
         <header className="text-center mb-12">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">ToiletTeacher.org</h1>
+          <h1 className="text-3xl text-gray-900 mb-2">ToiletTeacher.org</h1>
           <p className="text-lg text-gray-600 italic">Uncovering Truth, One Flush at a Time</p>
         </header>
 
