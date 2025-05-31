@@ -44,7 +44,6 @@ export default function TeacherPageLayout({
               {teacherName}
             </Link>
           </h1>
-          <p className="text-lg text-gray-600 italic">ToiletTeacher.org</p>
           <p className="text-lg text-gray-500">{currentDate}</p>
           <p className="text-sm text-gray-400">{quoteIndex + 1} of {quoteTotal}</p>
         </header>
