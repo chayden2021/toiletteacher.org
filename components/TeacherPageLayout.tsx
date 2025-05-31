@@ -3,7 +3,7 @@ import Link from "next/link"
 interface TeacherPageLayoutProps {
   teacherName: string
   currentDate: string
-  quote: string
+  quote: { text: string; citation: string }
   children?: React.ReactNode // for any extra content
 }
 
@@ -29,7 +29,8 @@ export default function TeacherPageLayout({
 
         {/* Main Content */}
         <main className="mb-4">
-          <blockquote className="text-gray-800 leading-relaxed text-lg font-medium">{quote}</blockquote>
+          <blockquote className="text-gray-800 leading-relaxed text-lg font-medium">{quote.text}</blockquote>
+          <div className="text-sm text-gray-500 mt-4">{quote.citation}</div>
           {children}
         </main>
 

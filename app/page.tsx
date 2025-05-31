@@ -27,22 +27,27 @@ export default function HomePage() {
         {/* Main Content */}
         <main className="mb-12">
           <p className="text-center text-gray-800 leading-relaxed text-lg mb-8">
-            We spend a lot of time on the toilet. What if we spent that time getting closer to the Truth? Pick a toilet teacher and take a few deep breaths with their daily message.
+            We spend a lot of time on the toilet. What if we spent that time getting closer to the Truth? Choose your toilet teacher and take a few deep breaths with their daily message.
           </p>
 
           {/* Navigation */}
-          <div className="space-y-4">
+          <div className="space-y-4 flex flex-col items-center">
             <Select onValueChange={setSelectedPath}>
-              <SelectTrigger className="w-full">
+              <SelectTrigger className="w-64 px-2 py-1"> {/* Thinner width and less padding */}
                 <SelectValue placeholder="Choose your toilet teacher" />
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="/jesus">Jesus</SelectItem>
+                {/* Add more items here */}
               </SelectContent>
             </Select>
 
-            <Button onClick={handleGetStarted} disabled={!selectedPath} className="w-full">
-              Get Started
+            <Button
+              onClick={handleGetStarted}
+              disabled={!selectedPath}
+              className="w-24 px-2 py-1"
+            >
+              Go
             </Button>
           </div>
         </main>
