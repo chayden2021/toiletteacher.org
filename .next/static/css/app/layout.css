@@ -779,6 +779,9 @@ video {
 .mt-8 {
   margin-top: 2rem;
 }
+.mt-6 {
+  margin-top: 1.5rem;
+}
 .block {
   display: block;
 }
@@ -869,6 +872,9 @@ video {
 }
 .h-svh {
   height: 100svh;
+}
+.h-40 {
+  height: 10rem;
 }
 .max-h-96 {
   max-height: 24rem;
@@ -1079,6 +1085,9 @@ video {
 .select-none {
   user-select: none;
 }
+.resize-y {
+  resize: vertical;
+}
 .list-none {
   list-style-type: none;
 }
@@ -1190,6 +1199,9 @@ video {
 .rounded-sm {
   border-radius: calc(var(--radius) - 4px);
 }
+.rounded {
+  border-radius: 0.25rem;
+}
 .rounded-t-\[10px\] {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -1252,6 +1264,10 @@ video {
 }
 .border-transparent {
   border-color: transparent;
+}
+.border-gray-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
 }
 .border-l-transparent {
   border-left-color: transparent;
