@@ -8,6 +8,8 @@ interface TeacherPageLayoutProps {
   teacherName: string
   currentDate: string
   quote: { text: string; citation: string }
+  quoteIndex: number
+  quoteTotal: number
   children?: React.ReactNode // for any extra content
 }
 
@@ -15,6 +17,8 @@ export default function TeacherPageLayout({
   teacherName,
   currentDate,
   quote,
+  quoteIndex,    
+  quoteTotal,     
   children,
 }: TeacherPageLayoutProps) {
   const [showScratch, setShowScratch] = useState(false)
@@ -42,12 +46,13 @@ export default function TeacherPageLayout({
           </h1>
           <p className="text-lg text-gray-600 italic">ToiletTeacher.org</p>
           <p className="text-lg text-gray-500">{currentDate}</p>
+          <p className="text-sm text-gray-400">{quoteIndex + 1} of {quoteTotal}</p>
         </header>
 
         {/* Main Content */}
         <main className="mb-4">
           <blockquote className="text-gray-800 leading-relaxed text-lg font-medium">{quote.text}</blockquote>
-          <div className="text-sm text-gray-500 mt-4">{quote.citation}</div>
+          <div className="text-sm text-gray-500 mt-4 mb-8 italic">{quote.citation}</div>
           {showScratch && (
             <textarea
               className="w-full h-40 mt-6 p-3 border border-gray-300 rounded resize-y"
@@ -59,8 +64,13 @@ export default function TeacherPageLayout({
           {children}
         </main>
 
+        {/* Divider above footer, left-aligned and matching footer width */}
+        <div>
+          <hr className="border-t border-gray-200 w-[160px] ml-0" />
+        </div>
+
         {/* Footer */}
-        <footer className="text-xs text-gray-500 border-t border-gray-200 mt-4 pt-4 flex gap-2">
+        <footer className="text-xs text-gray-500 pt-4 flex gap-2 w-[160px] ml-0">
           <button
             type="button"
             className="text-blue-600 hover:underline text-xs"
