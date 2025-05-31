@@ -55,7 +55,7 @@ export default function TeacherPageLayout({
           <div className="text-sm text-gray-500 mt-4 mb-8 italic">{quote.citation}</div>
           {showScratch && (
             <textarea
-              className="w-full h-40 mt-6 p-3 border border-gray-300 rounded resize-y"
+              className="w-full h-40 mt-2 p-3 border border-gray-300 rounded resize-y"
               placeholder={scratchPlaceholder}
               value={scratchText}
               onChange={(e) => setScratchText(e.target.value)}

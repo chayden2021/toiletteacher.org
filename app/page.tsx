@@ -26,9 +26,6 @@ export default function HomePage() {
 
         {/* Main Content */}
         <main className="mb-12">
-          <p className="text-center text-gray-800 leading-relaxed text-lg mb-8">
-            We spend a lot of time on the toilet. What if we spent that time getting closer to the Truth? Choose your toilet teacher and take a few deep breaths with their daily message.
-          </p>
 
           {/* Navigation */}
           <div className="space-y-4 flex flex-col items-center">
@@ -53,7 +50,7 @@ export default function HomePage() {
         </main>
 
         {/* Footer */}
-        <footer className="text-center text-sm text-gray-500 border-t border-gray-200 pt-6">
+        <footer className="text-center text-sm text-gray-500 border-t border-gray-200 pt-6 w-64 mx-auto">
           <p>This web page was inspired by DailyTao.org.</p>
         </footer>
       </div>
