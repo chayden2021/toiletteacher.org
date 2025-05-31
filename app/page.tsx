@@ -34,7 +34,7 @@ export default function HomePage() {
           <div className="space-y-4 flex flex-col items-center">
             <Select onValueChange={setSelectedPath}>
               <SelectTrigger className="w-64 px-2 py-1"> {/* Thinner width and less padding */}
-                <SelectValue placeholder="Choose your toilet teacher" />
+                <SelectValue placeholder="Choose a toilet teacher" />
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="/jesus">Jesus</SelectItem>
@@ -45,9 +45,9 @@ export default function HomePage() {
             <Button
               onClick={handleGetStarted}
               disabled={!selectedPath}
-              className="w-24 px-2 py-1"
+              className="w-12 h-8 p-0 flex items-center justify-center"
             >
-              Go
+              <span className="text-lg">&#8594;</span>
             </Button>
           </div>
         </main>
@@ -55,7 +55,6 @@ export default function HomePage() {
         {/* Footer */}
         <footer className="text-center text-sm text-gray-500 border-t border-gray-200 pt-6">
           <p>This web page was inspired by DailyTao.org.</p>
-          <p className="mt-2">...</p>
         </footer>
       </div>
     </div>

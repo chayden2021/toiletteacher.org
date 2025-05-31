@@ -2,6 +2,7 @@
 
 import React, { useState } from "react"
 import Link from "next/link"
+import { scratchPrompts } from "@/lib/scratch-prompts"
 
 interface TeacherPageLayoutProps {
   teacherName: string
@@ -18,8 +19,16 @@ export default function TeacherPageLayout({
 }: TeacherPageLayoutProps) {
   const [showScratch, setShowScratch] = useState(false)
   const [scratchText, setScratchText] = useState("")
+  const [scratchPlaceholder, setScratchPlaceholder] = useState(scratchPrompts[0])
 
-  const onScratchPaperClick = () => setShowScratch((v) => !v)
+  const onScratchPaperClick = () => {
+    // Pick a random prompt
+    const randomPrompt = scratchPrompts[Math.floor(Math.random() * scratchPrompts.length)]
+    setScratchPlaceholder(randomPrompt)
+    setShowScratch((v) => !v)
+    // Optionally clear the textarea when opening
+    if (!showScratch) setScratchText("")
+  }
 
   return (
     <div className="min-h-screen bg-white">
@@ -42,7 +51,7 @@ export default function TeacherPageLayout({
           {showScratch && (
             <textarea
               className="w-full h-40 mt-6 p-3 border border-gray-300 rounded resize-y"
-              placeholder=""
+              placeholder={scratchPlaceholder}
               value={scratchText}
               onChange={(e) => setScratchText(e.target.value)}
             />
@@ -51,7 +60,7 @@ export default function TeacherPageLayout({
         </main>
 
         {/* Footer */}
-        <footer className="text-xs text-gray-500 border-t border-gray-200 mt-4 pt-4 flex justify-center gap-2">
+        <footer className="text-xs text-gray-500 border-t border-gray-200 mt-4 pt-4 flex gap-2">
           <button
             type="button"
             className="text-blue-600 hover:underline text-xs"
