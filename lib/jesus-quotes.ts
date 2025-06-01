@@ -79,4 +79,49 @@ export const jesusQuotes = [
   text: "Come to me, all you who are weary and burdened, and I will give you rest.",
   citation: "The Book of Matthew",
 },
+{
+  text: "I am the light of the world. Whoever follows me will never walk in darkness, but will have the light of life.",
+  citation: "John 8:12",
+},
+{
+  text: "The thief comes only to steal and kill and destroy; I have come that they may have life, and have it to the full.",
+  citation: "John 10:10",
+},
+{
+  text: "My grace is sufficient for you, for my power is made perfect in weakness.",
+  citation: "Second Corinthians", 
+},
+{
+  text: "If anyone hears my voice and opens the door, I will come in and eat with that person, and they with me.",
+  citation: "The Book of Revelation",
+},
+{
+  text: "The kingdom of God is not coming with things that can be observed; nor will they say, 'Look, here it is!' or 'There it is!' For, in fact, the kingdom of God is within you.",
+  citation: "Luke 17:20–21",
+},
+{
+  text: "What is impossible with man is possible with God.",
+  citation: "The Book of Luke",
+},
+{
+  text: "I am the bread of life. Whoever comes to me will never go hungry, and whoever believes in me will never be thirsty.",
+  citation: "The Book of John",
+},
+{
+  text: "Who of you by worrying can add a single hour to your life?",
+  citation: "The Book of Luke",
+},
+{
+  text: "Blessed are the meek, for they will inherit the earth.",
+  citation: "The Book of Matthew",
+},
+{
+  text: "Father, forgive them, for they do not know what they are doing.",
+  citation: "The Book of Luke",
+},
+{
+  text: "You are the light of the world. A town built on a hill cannot be hidden.",
+  citation: "The Book of Matthew",
+},
+
 ]
