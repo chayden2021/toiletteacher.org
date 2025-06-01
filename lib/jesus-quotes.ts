@@ -17,11 +17,11 @@ export const jesusQuotes = [
   },
   {
     text: "Therefore I tell you, whatever you ask for in prayer, believe that you have received it, and it will be yours.",
-    citation: "Mark 11:24",
+    citation: "The Book of Mark",
   },
   {
     text: "And when you stand praying, if you hold anything against anyone, forgive them, so that your Father in heaven may forgive you your sins.",
-    citation: "Mark 11:25",
+    citation: "The Book of Mark",
   },
   {
     text: "Do not worry about tomorrow, for tomorrow will worry about itself. Each day has enough trouble of its own.",
