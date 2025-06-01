@@ -59,4 +59,24 @@ export const jesusQuotes = [
     text: "So I say to you: Ask and it will be given to you; seek and you will find; knock and the door will be opened to you.",
     citation: "The Book of Luke",
   },
+  {
+  text: "Peace I leave with you; my peace I give you. I do not give to you as the world gives. Do not let your hearts be troubled and do not be afraid.",
+  citation: "The Book of John",
+  },
+  {
+  text: "Why do you look at the speck of sawdust in your brother’s eye and pay no attention to the plank in your own eye?",
+  citation: "The Book of Matthew",
+  },
+  {
+  text: "Man shall not live on bread alone, but on every word that comes from the mouth of God.",
+  citation: "The Book of Matthew",
+  },
+  {
+  text: "If you hold to my teaching, you are really my disciples. Then you will know the truth, and the truth will set you free.",
+  citation: "The Book of John",
+  },
+  {
+  text: "Come to me, all you who are weary and burdened, and I will give you rest.",
+  citation: "The Book of Matthew",
+},
 ]
