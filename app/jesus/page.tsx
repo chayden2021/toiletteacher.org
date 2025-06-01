@@ -3,9 +3,11 @@ import TeacherPageLayout from "@/components/TeacherPageLayout";
 
 // Utility to get today's quote
 function getDailyQuote(quotes: any[]) {
+  const startDate = new Date("2024-01-01"); // set your desired start date
   const today = new Date();
-  const dayNumber = Math.floor(today.getTime() / (1000 * 60 * 60 * 24));
-  const index = dayNumber % quotes.length;
+  const diffTime = today.getTime() - startDate.getTime();
+  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+  const index = ((diffDays % quotes.length) + quotes.length) % quotes.length; // ensures positive index
   return { quote: quotes[index], index };
 }
 
