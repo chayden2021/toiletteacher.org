@@ -28,7 +28,7 @@ export default function TollePage() {
   const { quote, index } = getDailyQuote(tolleQuotes);
   return (
     <TeacherPageLayout
-      teacherName="Eckart Tolle"
+      teacherName="Daily Eckart Tolle"
       currentDate={getFormattedDate()}
       quote={quote}
       quoteIndex={index}

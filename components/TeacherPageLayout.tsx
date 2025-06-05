@@ -80,22 +80,6 @@ export default function TeacherPageLayout({
                 value={scratchText}
                 onChange={(e) => setScratchText(e.target.value)}
               />
-              <a
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault(); // Prevent default link behavior
-                  const blob = new Blob([scratchText], { type: "text/plain" });
-                  const url = URL.createObjectURL(blob);
-                  const link = document.createElement("a");
-                  link.href = url;
-                  link.download = "journal.txt";
-                  link.click();
-                  URL.revokeObjectURL(url); // Clean up the URL object
-                }}
-                className="text-blue-600 hover:underline text-xs mt-4 block"
-              >
-                Save Writing
-              </a>
             </div>
           )}
           {children}
