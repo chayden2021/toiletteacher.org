@@ -51,6 +51,11 @@ export default function HomePage() {
 
         {/* Footer */}
         <footer className="text-center text-sm text-gray-500 border-t border-gray-200 pt-6 w-64 mx-auto">
+          <p>
+            <a href="/add-to-home" className="text-blue-500 hover:underline">
+              Add to Home Screen
+            </a>
+          </p>
           <p>This web page was inspired by DailyTao.org.</p>
         </footer>
       </div>

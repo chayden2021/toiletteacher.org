@@ -1,0 +1,60 @@
+export const teacherQuotes = [
+  { text: "", 
+    citation: ""
+    prompt: "" 
+  },
+  { text: "", 
+    citation: ""
+    prompt: "" 
+  },
+  { text: "", 
+    citation: ""
+    prompt: "" 
+  },
+  { text: "", 
+    citation: ""
+    prompt: "" 
+  },
+  { text: "", 
+    citation: ""
+    prompt: "" 
+  },
+  { text: "", 
+    citation: ""
+    prompt: "" 
+  },
+  { text: "", 
+    citation: ""
+    prompt: "" 
+  },
+  { text: "", 
+    citation: ""
+    prompt: "" 
+  },
+  { text: "", 
+    citation: ""
+    prompt: "" 
+  },
+  { text: "", 
+    citation: ""
+    prompt: "" 
+  },
+  { text: "", 
+    citation: ""
+    prompt: "" 
+  },
+  { text: "", 
+    citation: ""
+    prompt: "" 
+  },
+  { text: "", 
+    citation: ""
+    prompt: "" 
+  },
+  { text: "", 
+    citation: ""
+    prompt: "" 
+  },
+
+
+];

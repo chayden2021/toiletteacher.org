@@ -95,7 +95,7 @@ export default function TeacherPageLayout({
             className="text-blue-600 hover:underline text-xs"
             onClick={onScratchPaperClick}
           >
-            Scratch Paper
+            Journal
           </button>
           <span>|</span>
           <Link href="/" className="text-blue-600 hover:underline text-xs">
