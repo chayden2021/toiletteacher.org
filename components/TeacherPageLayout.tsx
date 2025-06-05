@@ -73,12 +73,30 @@ export default function TeacherPageLayout({
           </blockquote>
           <div className="text-sm text-gray-500 mt-4 mb-8 italic">{quote.citation}</div>
           {showScratch && (
-            <textarea
-              className="w-full h-40 mt-2 p-3 border border-gray-300 rounded resize-y"
-              placeholder={quote.prompt || scratchPlaceholder} // Use the prompt as the placeholder
-              value={scratchText}
-              onChange={(e) => setScratchText(e.target.value)}
-            />
+            <div>
+              <textarea
+                className="w-full h-40 mt-2 p-3 border border-gray-300 rounded resize-y"
+                placeholder={quote.prompt || scratchPlaceholder} // Use the prompt as the placeholder
+                value={scratchText}
+                onChange={(e) => setScratchText(e.target.value)}
+              />
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent default link behavior
+                  const blob = new Blob([scratchText], { type: "text/plain" });
+                  const url = URL.createObjectURL(blob);
+                  const link = document.createElement("a");
+                  link.href = url;
+                  link.download = "journal.txt";
+                  link.click();
+                  URL.revokeObjectURL(url); // Clean up the URL object
+                }}
+                className="text-blue-600 hover:underline text-xs mt-4 block"
+              >
+                Save Writing
+              </a>
+            </div>
           )}
           {children}
         </main>
