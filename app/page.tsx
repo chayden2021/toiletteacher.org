@@ -3,7 +3,6 @@
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
 export default function HomePage() {
   const [selectedPath, setSelectedPath] = useState("")
@@ -29,15 +28,21 @@ export default function HomePage() {
 
           {/* Navigation */}
           <div className="space-y-4 flex flex-col items-center">
-            <Select onValueChange={setSelectedPath}>
-              <SelectTrigger className="w-64 px-2 py-1"> {/* Thinner width and less padding */}
-                <SelectValue placeholder="Choose your toilet teacher" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="/jesus">Jesus</SelectItem>
-                <SelectItem value="/tolle">Eckhart Tolle</SelectItem>
-              </SelectContent>
-            </Select>
+            {/* Updated Dropdown */}
+            <div className="mb-6">
+              <select
+                id="teacher-select"
+                className="p-2 px-4 border border-gray-300 rounded inline-block max-w-fit text-sm"
+                onChange={(e) => setSelectedPath(e.target.value)}
+                defaultValue=""
+              >
+                <option value="" disabled>
+                  Chose your toilet teacher
+                </option>
+                <option value="/jesus">Jesus</option>
+                <option value="/tolle">Eckhart Tolle</option>
+              </select>
+            </div>
 
             <Button
               onClick={handleGetStarted}

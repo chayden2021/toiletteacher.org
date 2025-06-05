@@ -92,3 +92,10 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@media (min-width: 1024px) {
+  body {
+    transform: scale(1.25); /* Zoom in by 10% */
+    transform-origin: top center; /* Keep the zoom centered */
+  }
+}
