@@ -785,6 +785,9 @@ video {
 .block {
   display: block;
 }
+.inline-block {
+  display: inline-block;
+}
 .flex {
   display: flex;
 }
@@ -1013,6 +1016,9 @@ video {
 }
 .max-w-max {
   max-width: max-content;
+}
+.max-w-fit {
+  max-width: fit-content;
 }
 .flex-1 {
   flex: 1 1 0%;
