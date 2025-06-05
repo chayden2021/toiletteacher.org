@@ -8,13 +8,13 @@ export default function AddToHomePage() {
 
   const instructions = {
     iPhone: [
-      "Open Safari on your iPhone and go to the page of your current toilet teacher.",
+      "Open Safari on your iPhone and go to the page of your current toilet teacher (e.g. ToiletTeacher.org/jesus).",
       "Tap the share icon (a square with an arrow pointing up).",
       "Scroll down and select 'Add to Home Screen'.",
       "Follow the prompts to add the icon to your home screen.",
     ],
     Android: [
-      "Open Chrome on your Android device and go to the page of your current toilet teacher.",
+      "Open Chrome on your Android device and go to the page of your current toilet teacher (e.g. ToiletTeacher.org/jesus).",
       "Tap the menu icon (three dots in the top-right corner).",
       "Select 'Add to Home Screen' from the dropdown menu.",
       "Follow the prompts to add the icon to your home screen.",
@@ -25,7 +25,7 @@ export default function AddToHomePage() {
     <div className="min-h-screen bg-white">
       <div className="max-w-2xl mx-auto px-6 py-12">
         <header className="mb-8">
-          <h1 className="text-3xl text-gray-900 mb-4">Get ToiletTeacher.org on Your Home Screen!</h1>
+          <h1 className="text-3xl text-gray-900 mb-4">Have ToiletTeacher.org on Your Home Screen!</h1>
         </header>
         <main>
           {/* Italicized Message */}

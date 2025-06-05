@@ -31,7 +31,7 @@ export default function HomePage() {
           <div className="space-y-4 flex flex-col items-center">
             <Select onValueChange={setSelectedPath}>
               <SelectTrigger className="w-64 px-2 py-1"> {/* Thinner width and less padding */}
-                <SelectValue placeholder="Choose a toilet teacher" />
+                <SelectValue placeholder="Choose your toilet teacher" />
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="/jesus">Jesus</SelectItem>
