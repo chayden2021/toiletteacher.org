@@ -28,7 +28,7 @@ export default function JesusPage() {
   const { quote, index } = getDailyQuote(jesusQuotes);
   return (
     <TeacherPageLayout
-      teacherName="Daily Jesus"
+      teacherName="Jesus"
       currentDate={getFormattedDate()}
       quote={quote}
       quoteIndex={index}
