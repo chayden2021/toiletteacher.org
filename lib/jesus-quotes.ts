@@ -1,3 +1,4 @@
+import { scratchPrompts } from "@/lib/scratch-prompts"
 export const jesusQuotes = [
   {
     text: "A new command I give you: Love one another. As I have loved you, so you must love one another.",
@@ -18,6 +19,7 @@ export const jesusQuotes = [
   {
     text: "Therefore I tell you, whatever you ask for in prayer, believe that you have received it, and it will be yours.",
     citation: "The Book of Mark",
+    prompt: "Write out your wises and feel that they are yours!"
   },
   {
     text: "And when you stand praying, if you hold anything against anyone, forgive them, so that your Father in heaven may forgive you your sins.",

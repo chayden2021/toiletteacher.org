@@ -35,7 +35,7 @@ export default function HomePage() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="/jesus">Jesus</SelectItem>
-                {/* Add more items here */}
+                <SelectItem value="/tolle">Eckhart Tolle</SelectItem>
               </SelectContent>
             </Select>
 

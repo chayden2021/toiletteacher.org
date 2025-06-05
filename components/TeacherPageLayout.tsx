@@ -7,7 +7,7 @@ import { scratchPrompts } from "@/lib/scratch-prompts"
 interface TeacherPageLayoutProps {
   teacherName: string
   currentDate: string
-  quote: { text: string; citation: string }
+  quote: { text: string; citation: string}
   quoteIndex: number
   quoteTotal: number
   children?: React.ReactNode // for any extra content
@@ -50,12 +50,32 @@ export default function TeacherPageLayout({
 
         {/* Main Content */}
         <main className="mb-4">
-          <blockquote className="text-gray-800 leading-relaxed text-lg font-medium">{quote.text}</blockquote>
+          <blockquote className="text-gray-800 leading-relaxed text-lg font-medium">
+            {(() => {
+              // Split by \n for line breaks
+              return quote.text.split('\n').map((line, lineIdx) => {
+                // Split by \i for italics
+                const parts = line.split(/\\i/);
+                return (
+                  <span key={lineIdx}>
+                    {parts.map((part, idx) =>
+                      idx % 2 === 1 ? (
+                        <span key={idx} className="italic">{part}</span>
+                      ) : (
+                        <span key={idx}>{part}</span>
+                      )
+                    )}
+                    {lineIdx !== quote.text.split('\n').length - 1 && <br />}
+                  </span>
+                );
+              });
+            })()}
+          </blockquote>
           <div className="text-sm text-gray-500 mt-4 mb-8 italic">{quote.citation}</div>
           {showScratch && (
             <textarea
               className="w-full h-40 mt-2 p-3 border border-gray-300 rounded resize-y"
-              placeholder={scratchPlaceholder}
+              placeholder={quote.prompt || scratchPlaceholder} // Use the prompt as the placeholder
               value={scratchText}
               onChange={(e) => setScratchText(e.target.value)}
             />
