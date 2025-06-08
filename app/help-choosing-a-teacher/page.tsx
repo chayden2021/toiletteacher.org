@@ -13,6 +13,11 @@ export default function HelpChoosingATeacherPage() {
       image: "/images/laotzu.jpg", // Replace with the actual path to the image
     },
     {
+      name: "Zhuangzi",
+      bio: "Zhuangzi was a Chinese philosopher and mystic whose writings form one of the foundational texts of Daoism, the Zhuangzi. The Zhuangzi is a collection of stories, parables, and philosophical reflections that explore themes of freedom, spontaneity, and living in harmony with the Dao—the natural flow of the universe. Zhuangzi’s teachings invite us to let go of rigid judgments, embrace uncertainty, and see through the illusion of control. ",
+      image: "/images/zhuangzi.jpg", // Replace with the actual path to the image
+    },
+    {
       name: "Eckhart Tolle",
       bio: "Eckhart Tolle is a contemporary spiritual teacher and author of 'The Power of Now' and 'A New Earth.' His teachings focus on cultivating presence and transcending the dysfunction, resulting in inner peace.",
       image: "/images/eckhart.jpg", // Replace with the actual path to the image

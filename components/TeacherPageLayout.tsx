@@ -50,6 +50,7 @@ export default function TeacherPageLayout({
 
         {/* Main Content */}
         <main className="mb-4">
+          {/* Quote Section */}
           <blockquote className="text-gray-800 leading-relaxed text-lg font-medium">
             {(() => {
               // Split by \n for line breaks
@@ -72,6 +73,30 @@ export default function TeacherPageLayout({
             })()}
           </blockquote>
           <div className="text-sm text-gray-500 mt-4 mb-8 italic">{quote.citation}</div>
+
+          {/* Share Button */}
+          <button
+            onClick={() => {
+              if (navigator.share) {
+                navigator
+                  .share({
+                    title: "Check out this quote from my Toilet Teacher!",
+                    text: quote.text,
+                    url: window.location.href, // Optional: Include the current page URL
+                    
+                    
+                  })
+                  .then(() => console.log("Quote shared successfully!"))
+                  .catch((error) => console.error("Error sharing quote:", error));
+              } else {
+                alert("Sharing is not supported on this device.");
+              }
+            }}
+            className="text-blue-500 hover:underline text-sm"
+          >
+            Share Quote
+          </button>
+
           {showScratch && (
             <div>
               <textarea
