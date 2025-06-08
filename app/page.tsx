@@ -9,7 +9,11 @@ export default function HomePage() {
   const router = useRouter()
 
   const handleGetStarted = () => {
-    if (selectedPath) {
+    if (selectedPath === "https://dailytao.org") {
+      // Redirect to external site
+      window.location.href = selectedPath
+    } else if (selectedPath) {
+      // Redirect to internal route
       router.push(selectedPath)
     }
   }
@@ -37,9 +41,10 @@ export default function HomePage() {
                 defaultValue=""
               >
                 <option value="" disabled>
-                  Chose your toilet teacher
+                  Choose your toilet teacher
                 </option>
                 <option value="/jesus">Jesus</option>
+                <option value="https://dailytao.org">Lao Tzu | dailytao.org </option>
                 <option value="/tolle">Eckhart Tolle</option>
               </select>
             </div>
@@ -57,8 +62,13 @@ export default function HomePage() {
         {/* Footer */}
         <footer className="text-center text-sm text-gray-500 border-t border-gray-200 pt-6 w-64 mx-auto">
           <p>
+            <a href="/help-choosing-a-teacher" className="text-blue-500 hover:underline">
+              [Learn about the teachers]
+            </a>
+          </p>
+          <p>
             <a href="/add-to-home" className="text-blue-500 hover:underline">
-              Add to Home Screen
+              [Add to Home Screen]
             </a>
           </p>
           <p>This web page was inspired by DailyTao.org.</p>
