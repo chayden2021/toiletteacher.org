@@ -45,6 +45,7 @@ export default function HomePage() {
                 </option>
                 <option value="/jesus">Jesus</option>
                 <option value="https://dailytao.org">Lao Tzu | dailytao.org </option>
+                <option value="/zhuangzi">Zhuangzi</option>
                 <option value="/tolle">Eckhart Tolle</option>
               </select>
             </div>
@@ -68,7 +69,7 @@ export default function HomePage() {
           </p>
           <p>
             <a href="/add-to-home" className="text-blue-500 hover:underline">
-              [Add to Home Screen]
+              [Add to home screen]
             </a>
           </p>
           <p>This web page was inspired by DailyTao.org.</p>

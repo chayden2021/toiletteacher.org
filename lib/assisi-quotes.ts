@@ -1,1 +1,0 @@
-import { scratchPrompts } from "@/lib/scratch-prompts"

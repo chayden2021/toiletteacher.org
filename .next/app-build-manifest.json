@@ -11,25 +11,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/jesus/page": [
+    "/zhuangzi/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/jesus/page.js"
-    ],
-    "/add-to-home/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/add-to-home/page.js"
-    ],
-    "/tolle/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/tolle/page.js"
-    ],
-    "/help-choosing-a-teacher/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/help-choosing-a-teacher/page.js"
+      "static/chunks/app/zhuangzi/page.js"
     ]
   }
 }
