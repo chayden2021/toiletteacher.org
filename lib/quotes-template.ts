@@ -1,60 +1,18 @@
 export const teacherQuotes = [
   { text: "", 
-    citation: ""
-    prompt: "" 
+    citation: "",
+    prompt: "",
   },
   { text: "", 
-    citation: ""
-    prompt: "" 
+    citation: "",
+    prompt: "",
   },
   { text: "", 
-    citation: ""
-    prompt: "" 
+    citation: "",
+    prompt: "",
   },
   { text: "", 
-    citation: ""
-    prompt: "" 
+    citation: "",
+    prompt: "",
   },
-  { text: "", 
-    citation: ""
-    prompt: "" 
-  },
-  { text: "", 
-    citation: ""
-    prompt: "" 
-  },
-  { text: "", 
-    citation: ""
-    prompt: "" 
-  },
-  { text: "", 
-    citation: ""
-    prompt: "" 
-  },
-  { text: "", 
-    citation: ""
-    prompt: "" 
-  },
-  { text: "", 
-    citation: ""
-    prompt: "" 
-  },
-  { text: "", 
-    citation: ""
-    prompt: "" 
-  },
-  { text: "", 
-    citation: ""
-    prompt: "" 
-  },
-  { text: "", 
-    citation: ""
-    prompt: "" 
-  },
-  { text: "", 
-    citation: ""
-    prompt: "" 
-  },
-
-
 ];

@@ -8,6 +8,11 @@ export default function HelpChoosingATeacherPage() {
       image: "/images/jesus.jpg", // Replace with the actual path to the image
     },
     {
+      name: "Krishna",
+      bio: "In the Hindu tradition, the Bhagavad Gita is one of the most important spiritual texts. It is a dialogue between Arjuna, a warrior who will soon go fight in battle, and his charioteer Krishna, who is human manifestation of God. Krishna provides Arjuna with timeless wisdom and insight into the nature of reality. All quotes featured here are drawn from his words in the Bhagavad Gita, as translated by Eknath Easwaran.",
+      image: "/images/krishna.jpg", // Replace with the actual path to the image
+    },
+    {
       name: "Lao Tzu",
       bio: "Lao Tzu, the ancient Chinese philosopher and writer, is the reputed author of the Tao Te Ching and the founder of Taoism. His teachings focus on living in harmony with the Tao, the fundamental principle of the universe.",
       image: "/images/laotzu.jpg", // Replace with the actual path to the image

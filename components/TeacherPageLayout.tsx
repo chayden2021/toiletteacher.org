@@ -7,7 +7,7 @@ import { scratchPrompts } from "@/lib/scratch-prompts"
 interface TeacherPageLayoutProps {
   teacherName: string
   currentDate: string
-  quote: { text: string; citation: string}
+  quote: { text: string; citation: string }
   quoteIndex: number
   quoteTotal: number
   children?: React.ReactNode // for any extra content
@@ -17,8 +17,8 @@ export default function TeacherPageLayout({
   teacherName,
   currentDate,
   quote,
-  quoteIndex,    
-  quoteTotal,     
+  quoteIndex,
+  quoteTotal,
   children,
 }: TeacherPageLayoutProps) {
   const [showScratch, setShowScratch] = useState(false)
@@ -34,6 +34,21 @@ export default function TeacherPageLayout({
     if (!showScratch) setScratchText("")
   }
 
+  const onShareClick = () => {
+    if (navigator.share) {
+      navigator
+        .share({
+          title: "Check out this quote from my Toilet Teacher!",
+          text: quote.text,
+          url: window.location.href, // Optional: Include the current page URL
+        })
+        .then(() => console.log("Quote shared successfully!"))
+        .catch((error) => console.error("Error sharing quote:", error))
+    } else {
+      alert("Sharing is not supported on this device.")
+    }
+  }
+
   return (
     <div className="min-h-screen bg-white">
       <div className="max-w-2xl mx-auto px-6 py-12">
@@ -45,7 +60,9 @@ export default function TeacherPageLayout({
             </Link>
           </h1>
           <p className="text-lg text-gray-500">{currentDate}</p>
-          <p className="text-sm text-gray-400">{quoteIndex + 1} of {quoteTotal}</p>
+          <p className="text-sm text-gray-400">
+            {quoteIndex + 1} of {quoteTotal}
+          </p>
         </header>
 
         {/* Main Content */}
@@ -54,48 +71,27 @@ export default function TeacherPageLayout({
           <blockquote className="text-gray-800 leading-relaxed text-lg font-medium">
             {(() => {
               // Split by \n for line breaks
-              return quote.text.split('\n').map((line, lineIdx) => {
+              return quote.text.split("\n").map((line, lineIdx) => {
                 // Split by \i for italics
-                const parts = line.split(/\\i/);
+                const parts = line.split(/\\i/)
                 return (
                   <span key={lineIdx}>
                     {parts.map((part, idx) =>
                       idx % 2 === 1 ? (
-                        <span key={idx} className="italic">{part}</span>
+                        <span key={idx} className="italic">
+                          {part}
+                        </span>
                       ) : (
                         <span key={idx}>{part}</span>
                       )
                     )}
-                    {lineIdx !== quote.text.split('\n').length - 1 && <br />}
+                    {lineIdx !== quote.text.split("\n").length - 1 && <br />}
                   </span>
-                );
-              });
+                )
+              })
             })()}
           </blockquote>
           <div className="text-sm text-gray-500 mt-4 mb-8 italic">{quote.citation}</div>
-
-          {/* Share Button */}
-          <button
-            onClick={() => {
-              if (navigator.share) {
-                navigator
-                  .share({
-                    title: "Check out this quote from my Toilet Teacher!",
-                    text: quote.text,
-                    url: window.location.href, // Optional: Include the current page URL
-                    
-                    
-                  })
-                  .then(() => console.log("Quote shared successfully!"))
-                  .catch((error) => console.error("Error sharing quote:", error));
-              } else {
-                alert("Sharing is not supported on this device.");
-              }
-            }}
-            className="text-blue-500 hover:underline text-sm"
-          >
-            Share Quote
-          </button>
 
           {showScratch && (
             <div>
@@ -116,7 +112,15 @@ export default function TeacherPageLayout({
         </div>
 
         {/* Footer */}
-        <footer className="text-xs text-gray-500 pt-4 flex gap-2 w-[160px] ml-0">
+        <footer className="text-xs text-gray-500 pt-4 flex items-center gap-2 ml-0">
+          <button
+            type="button"
+            className="text-blue-600 hover:underline text-xs"
+            onClick={onShareClick}
+          >
+            Share Quote
+          </button>
+          <span>|</span>
           <button
             type="button"
             className="text-blue-600 hover:underline text-xs"

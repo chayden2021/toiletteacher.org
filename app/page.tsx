@@ -44,6 +44,7 @@ export default function HomePage() {
                   Choose your toilet teacher
                 </option>
                 <option value="/jesus">Jesus</option>
+                <option value="/krishna">Krishna | The Bhagavad Gita</option>
                 <option value="https://dailytao.org">Lao Tzu | dailytao.org </option>
                 <option value="/zhuangzi">Zhuangzi</option>
                 <option value="/tolle">Eckhart Tolle</option>
@@ -64,12 +65,12 @@ export default function HomePage() {
         <footer className="text-center text-sm text-gray-500 border-t border-gray-200 pt-6 w-64 mx-auto">
           <p>
             <a href="/help-choosing-a-teacher" className="text-blue-500 hover:underline">
-              [Learn about the teachers]
+              Learn About the Teachers
             </a>
           </p>
           <p>
             <a href="/add-to-home" className="text-blue-500 hover:underline">
-              [Add to home screen]
+              Add To Home Screen
             </a>
           </p>
           <p>This web page was inspired by DailyTao.org.</p>

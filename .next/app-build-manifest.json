@@ -16,10 +16,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/jesus/page.js"
     ],
-    "/_not-found/page": [
+    "/zhuangzi/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/chunks/app/zhuangzi/page.js"
+    ],
+    "/krishna/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/krishna/page.js"
+    ],
+    "/help-choosing-a-teacher/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/help-choosing-a-teacher/page.js"
     ]
   }
 }
