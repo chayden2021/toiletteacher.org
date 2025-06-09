@@ -1,6 +1,6 @@
 {
-  "/krishna/page": "app/krishna/page.js",
-  "/jesus/page": "app/jesus/page.js",
   "/page": "app/page.js",
+  "/jesus/page": "app/jesus/page.js",
+  "/krishna/page": "app/krishna/page.js",
   "/help-choosing-a-teacher/page": "app/help-choosing-a-teacher/page.js"
 }

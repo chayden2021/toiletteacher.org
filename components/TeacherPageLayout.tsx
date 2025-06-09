@@ -39,7 +39,6 @@ export default function TeacherPageLayout({
       navigator
         .share({
           title: "Check out this quote from my Toilet Teacher!",
-          text: quote.text,
           url: window.location.href, // Optional: Include the current page URL
         })
         .then(() => console.log("Quote shared successfully!"))
@@ -112,7 +111,7 @@ export default function TeacherPageLayout({
         </div>
 
         {/* Footer */}
-        <footer className="text-xs text-gray-500 pt-4 flex items-center gap-2 ml-0">
+        <footer className="text-xs text-gray-500 pt-4 flex justify-center items-center gap-2">
           <button
             type="button"
             className="text-blue-600 hover:underline text-xs"
