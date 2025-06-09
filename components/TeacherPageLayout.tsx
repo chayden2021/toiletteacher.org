@@ -111,7 +111,7 @@ export default function TeacherPageLayout({
         </div>
 
         {/* Footer */}
-        <footer className="text-xs text-gray-500 pt-4 flex justify-center items-center gap-2">
+        <footer className="text-xs text-gray-500 pt-4 flex items-center gap-2 ml-0">
           <button
             type="button"
             className="text-blue-600 hover:underline text-xs"
