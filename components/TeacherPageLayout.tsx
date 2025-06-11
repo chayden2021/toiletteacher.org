@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Link from "next/link"
 import { scratchPrompts } from "@/lib/scratch-prompts"
 
@@ -47,6 +47,27 @@ export default function TeacherPageLayout({
       alert("Sharing is not supported on this device.")
     }
   }
+
+  // Reset quotes based on EST time
+  useEffect(() => {
+    const now = new Date()
+    const utcHour = now.getUTCHours()
+    const utcDate = now.getUTCDate()
+
+    // Calculate EST time (UTC-5 or UTC-4 during daylight saving time)
+    const isDST = new Date().getTimezoneOffset() < 240 // Check if daylight saving time is active
+    const estHour = (utcHour - (isDST ? 4 : 5) + 24) % 24
+    const estDate = estHour >= 0 ? utcDate : utcDate - 1
+
+    const todayEST = `${now.getUTCFullYear()}-${now.getUTCMonth() + 1}-${estDate}`
+    const lastReset = localStorage.getItem("lastResetDateEST")
+
+    if (lastReset !== todayEST) {
+      // Reset quotes if the date has changed in EST
+      // resetQuotes(); // Uncomment this line if you have a resetQuotes function
+      localStorage.setItem("lastResetDateEST", todayEST) // Update the last reset date
+    }
+  }, [])
 
   return (
     <div className="min-h-screen bg-white">

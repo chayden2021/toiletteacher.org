@@ -125,5 +125,4 @@ export const jesusQuotes = [
   text: "You are the light of the world. A town built on a hill cannot be hidden.",
   citation: "The Book of Matthew",
 },
-
 ]

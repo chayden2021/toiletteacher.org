@@ -42,7 +42,7 @@ export const zhuangziQuotes = [
     citation: "",
   },
   {
-    text: "he Perfect Man uses his mind like a mirror — going after nothing, welcoming nothing, responding but not storing.",
+    text: "The Perfect Man uses his mind like a mirror — going after nothing, welcoming nothing, responding but not storing.",
     citation: "Zhuangzi, Burton Watson Translation",
   },
   {
