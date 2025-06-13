@@ -28,8 +28,8 @@ export default function HomePage() {
 
         {/* Text Box */}
         <div className="text-center mb-8">
-          <p className="text-gray-700 text-3xl italic text-base">
-            We spend a lot of time on the toilet. Why not use it to contemplate the truth? Pick a toilet teacher and contemplate their daily message!
+          <p className="text-xl text-gray-500 italic mb-2">
+            We spend a lot of time on the toilet. Why not use it to get closer to the truth? Pick a toilet teacher and breath with their daily message.
           </p>
         </div>
 
