@@ -24,12 +24,17 @@ export default function HomePage() {
         {/* Header */}
         <header className="text-center mb-12">
           <h1 className="text-3xl text-gray-900 mb-2">ToiletTeacher.org</h1>
-          <p className="text-lg text-gray-600 italic">Uncovering Truth with Daily Quotes, One Flush at a Time</p>
         </header>
+
+        {/* Text Box */}
+        <div className="text-center mb-8">
+          <p className="text-gray-700 text-3xl italic text-base">
+            We spend a lot of time on the toilet. Why not use it to contemplate the truth? Pick a toilet teacher and contemplate their daily message!
+          </p>
+        </div>
 
         {/* Main Content */}
         <main className="mb-12">
-
           {/* Navigation */}
           <div className="space-y-4 flex flex-col items-center">
             {/* Updated Dropdown */}
@@ -69,11 +74,18 @@ export default function HomePage() {
             </a>
           </p>
           <p>
-            <a href="/add-to-home" className="text-blue-500 hover:underline">
-              Add To Home Screen
+            <a href="/request-teacher" className="text-blue-500 hover:underline">
+              Request a New Teacher
             </a>
           </p>
-          <p>This web page was inspired by DailyTao.org.</p>
+          <p>
+            <a href="/add-to-home" className="text-blue-500 hover:underline">
+              Add to Home Screen
+            </a>
+          </p>
+          <p className="text-gray-400 italic">
+            This website was inspired by <a href="https://dailytao.org" className="text-blue-500 hover:underline">DailyTao.org</a>
+          </p>
         </footer>
       </div>
     </div>
