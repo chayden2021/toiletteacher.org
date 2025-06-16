@@ -23,7 +23,8 @@ export default function HomePage() {
       <div className="max-w-2xl mx-auto px-6 py-12">
         {/* Header */}
         <header className="mb-8">
-          <h1 className="text-2xl text-gray-900 mb-4">ToiletTeacher.org</h1>
+          <h1 className="text-2xl text-gray-900 mb-2">ToiletTeacher.org</h1>
+          <p className="text-lg text-gray-700 italic mb-4">For enlightened toilet time</p>
           <img
             src="/images/kangxi-emporer-southern-inspection-tour-scroll-three.jpg"
             alt="Kangxi Emperor Southern Inspection Tour"
@@ -37,7 +38,6 @@ export default function HomePage() {
         {/* Subtitle */}
         <div className="mb-8">
           <p className="text-base text-gray-500 italic">
-            Why not spend your toilet time getting closer to the truth? Pick a toilet teacher and breathe with their daily message.
           </p>
         </div>
 
