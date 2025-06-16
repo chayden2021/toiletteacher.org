@@ -27,8 +27,11 @@ export default function HomePage() {
           <img
             src="/images/kangxi-emporer-southern-inspection-tour-scroll-three.jpg"
             alt="Kangxi Emperor Southern Inspection Tour"
-            className="w-full h-auto mb-6"
+            className="w-full h-auto mb-2"
           />
+          <p className="text-xs text-gray-500 italic">
+            Image Source: The Kangxi Emperor's Southern Inspection Tour, Scroll Three: Ji'nan to Mount Tai
+          </p>
         </header>
 
         {/* Subtitle */}
@@ -51,7 +54,7 @@ export default function HomePage() {
                 defaultValue=""
               >
                 <option value="" disabled>
-                  Select a teacher
+                  Choose a teacher
                 </option>
                 <option value="/teachers/jesus">Jesus</option>
                 <option value="/teachers/krishna">Krishna | The Bhagavad Gita</option>
@@ -75,18 +78,16 @@ export default function HomePage() {
         {/* Footer */}
         <footer className="text-left text-sm text-gray-500 border-t border-gray-200 pt-6">
           <p>
-            <a href="/help-choosing-a-teacher" className="text-blue-500 hover:underline">
-              Learn About the Teachers
-            </a>
-          </p>
-          <p>
-            <a href="/request-teacher" className="text-blue-500 hover:underline">
-              Request a New Teacher
-            </a>
-          </p>
-          <p>
             <a href="/add-to-home" className="text-blue-500 hover:underline">
               Add to Home Screen
+            </a>{" "}
+            |{" "}
+            <a href="/help-choosing-a-teacher" className="text-blue-500 hover:underline">
+              About the Teachers
+            </a>{" "}
+            |{" "}
+            <a href="/request-teacher" className="text-blue-500 hover:underline">
+              Request a Teacher
             </a>
           </p>
           <p className="text-gray-400 italic">
