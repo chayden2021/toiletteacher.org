@@ -48,11 +48,12 @@ export default function HomePage() {
                 <option value="" disabled>
                   Choose your toilet teacher
                 </option>
-                <option value="/jesus">Jesus</option>
-                <option value="/krishna">Krishna | The Bhagavad Gita</option>
+                <option value="/teachers/jesus">Jesus</option>
+                <option value="/teachers/krishna">Krishna | The Bhagavad Gita</option>
                 <option value="https://dailytao.org">Lao Tzu | dailytao.org </option>
-                <option value="/zhuangzi">Zhuangzi</option>
-                <option value="/tolle">Eckhart Tolle</option>
+                <option value="/teachers/zhuangzi">Zhuangzi</option>
+                <option value="/teachers/alan-watts">Alan Watts</option>
+                <option value="/teachers/eckhart-tolle">Eckhart Tolle</option>
               </select>
             </div>
 

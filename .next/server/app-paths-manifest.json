@@ -1,6 +1,4 @@
 {
   "/page": "app/page.js",
-  "/request-teacher/page": "app/request-teacher/page.js",
-  "/krishna/page": "app/krishna/page.js",
-  "/add-to-home/page": "app/add-to-home/page.js"
+  "/teachers/krishna/page": "app/teachers/krishna/page.js"
 }
