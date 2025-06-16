@@ -15,6 +15,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/teachers/krishna/page.js"
+    ],
+    "/help-choosing-a-teacher/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/help-choosing-a-teacher/page.js"
     ]
   }
 }
