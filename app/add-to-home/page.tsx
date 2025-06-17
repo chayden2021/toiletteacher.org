@@ -25,7 +25,15 @@ export default function AddToHomePage() {
     <div className="min-h-screen bg-white">
       <div className="max-w-2xl mx-auto px-6 py-12">
         <header className="mb-8">
-          <h1 className="text-3xl text-gray-900 mb-4">Have ToiletTeacher.org on Your Home Screen!</h1>
+          <h1 className="text-2xl text-gray-900 mb-2">Have ToiletTeacher.org on Your Home Screen!</h1>
+          <img
+            src="/images/six-jewel-rivers.jpg"
+            alt="Six Jewel Rivers"
+            className="w-full h-auto mb-4 rounded"
+          />
+          <p className="text-xs text-gray-500 italic">
+            Painting: Six Jewel Rivers
+          </p>
         </header>
         <main>
           {/* Italicized Message */}
@@ -39,12 +47,12 @@ export default function AddToHomePage() {
             </label>
             <select
               id="device-select"
-              className="p-2 px-4 border border-gray-300 rounded inline-block max-w-fit text-sm" // Added text-sm
+              className="p-2 px-4 border border-gray-300 rounded inline-block max-w-fit text-sm"
               onChange={(e) => setDeviceType(e.target.value)}
               defaultValue=""
             >
               <option value="" disabled>
-                Device Type
+                Platform
               </option>
               <option value="iPhone">iPhone / iOS</option>
               <option value="Android">Android</option>

@@ -11,15 +11,40 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
+    "/teachers/jesus/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/teachers/jesus/page.js"
+    ],
+    "/teachers/zhuangzi/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/teachers/zhuangzi/page.js"
+    ],
+    "/add-to-home/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/add-to-home/page.js"
+    ],
+    "/request-teacher/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/request-teacher/page.js"
+    ],
     "/teachers/krishna/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/teachers/krishna/page.js"
     ],
-    "/help-choosing-a-teacher/page": [
+    "/teachers/alan-watts/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/help-choosing-a-teacher/page.js"
+      "static/chunks/app/teachers/alan-watts/page.js"
+    ],
+    "/api/send-email/route": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/api/send-email/route.js"
     ]
   }
 }

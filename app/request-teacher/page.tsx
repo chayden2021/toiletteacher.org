@@ -37,36 +37,44 @@ export default function RequestTeacherPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center">
+    <div className="min-h-screen bg-white">
       <div className="max-w-2xl mx-auto px-6 py-12">
         {/* Title */}
-        <header className="text-center mb-12">
-          <h1 className="text-3xl text-gray-900 mb-2">Request a New Teacher</h1>
-          <p className="text-lg text-gray-600 italic">
-            Suggest a teacher you'd like to see added to ToiletTeacher.org
+        <header className="mb-12">
+          <h1 className="text-2xl text-gray-900 mb-2">Get In Touch</h1>
+          <p className="text-lg text-gray-600 italic mb-4">
+            ToiletTeacher.org
+          </p>
+          <img
+            src="/images/sixteen-luohans.png"
+            alt="Sixteen Luohans"
+            className="w-full h-auto mb-6 rounded"
+          />
+          <p className="text-base text-gray-600 italic mb-6">
+            Provide some feedback or suggest a new teacher!
           </p>
         </header>
 
         {/* Form or Success Message */}
         {success ? (
-          <div className="text-center border border-gray-300 p-6 rounded bg-gray-100">
+          <div className="border border-gray-300 p-6 rounded bg-gray-100">
             <p className="text-lg font-medium text-gray-800">Success!</p>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={handleSubmit} className="space-y-4 mb-12">
             <div>
               <label
                 htmlFor="name"
                 className="block text-sm font-medium text-gray-700"
               >
-                Your Name
+                Name (optional)
               </label>
               <input
                 type="text"
                 id="name"
                 name="name"
                 required
-                className="w-full border border-gray-300 p-2 rounded"
+                className="w-64 border border-gray-300 p-2 rounded"
               />
             </div>
             <div>
@@ -74,14 +82,14 @@ export default function RequestTeacherPage() {
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-700"
               >
-                Your Email
+                Email (optional)
               </label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 required
-                className="w-full border border-gray-300 p-2 rounded"
+                className="w-64 border border-gray-300 p-2 rounded"
               />
             </div>
             <div>
@@ -89,20 +97,20 @@ export default function RequestTeacherPage() {
                 htmlFor="message"
                 className="block text-sm font-medium text-gray-700"
               >
-                Your Message
+                Message
               </label>
               <textarea
                 id="message"
                 name="message"
                 required
-                className="w-full border border-gray-300 p-2 rounded"
+                className="w-64 border border-gray-300 p-2 rounded"
               ></textarea>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-start">
               <button
                 type="submit"
                 disabled={loading}
-                className={`w-12 h-12 p-0 flex items-center justify-center border border-gray-300 rounded ${
+                className={`w-12 h-8 p-0 flex items-center justify-center border border-gray-300 rounded ${
                   loading
                     ? "opacity-50 cursor-not-allowed"
                     : "bg-black text-white hover:bg-gray-800"
@@ -115,11 +123,8 @@ export default function RequestTeacherPage() {
         )}
 
         {/* Home Link */}
-        <footer className="text-center mt-12">
-          <a
-            href="/"
-            className="text-blue-500 hover:underline text-sm"
-          >
+        <footer className="text-left text-sm text-gray-500 border-t border-gray-200 pt-6">
+          <a href="/" className="text-blue-500 hover:underline">
             Home
           </a>
         </footer>

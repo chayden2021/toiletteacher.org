@@ -33,6 +33,7 @@ export default function JesusPage() {
       quote={quote}
       quoteIndex={index}
       quoteTotal={jesusQuotes.length}
+      imagePath="/images/summer-mountains.png"
     />
   );
 }

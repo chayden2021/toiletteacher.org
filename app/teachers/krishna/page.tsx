@@ -28,7 +28,7 @@ export default function krishnaPage() {
   const { quote, index } = getDailyQuote(krishnaQuotes);
   return (
     <TeacherPageLayout
-      teacherName="Krishna | The Bhagavad Gita"
+      teacherName="Krishna"
       currentDate={getFormattedDate()}
       quote={quote}
       quoteIndex={index}

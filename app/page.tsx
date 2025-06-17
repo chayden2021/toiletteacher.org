@@ -3,10 +3,12 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
+import { getDailyImage } from "@/lib/get-daily-image";
 
 export default function HomePage() {
   const [selectedPath, setSelectedPath] = useState("");
   const router = useRouter();
+  const { path: dailyImage, source: dailySource } = getDailyImage();
 
   const handleGetStarted = () => {
     if (selectedPath === "https://dailytao.org") {
@@ -24,15 +26,13 @@ export default function HomePage() {
         {/* Header */}
         <header className="mb-8">
           <h1 className="text-2xl text-gray-900 mb-2">ToiletTeacher.org</h1>
-          <p className="text-lg text-gray-700 italic mb-4">For enlightened toilet time</p>
+          <p className="text-lg text-gray-700 italic mb-4">For more enlightened toilet time</p>
           <img
-            src="/images/kangxi-emporer-southern-inspection-tour-scroll-three.jpg"
-            alt="Kangxi Emperor Southern Inspection Tour"
-            className="w-full h-auto mb-2"
+            src={dailyImage}
+            alt="Daily Image"
+            className="w-full h-auto mb-2 rounded border-2 border-gray-300" // Thicker border
           />
-          <p className="text-xs text-gray-500 italic">
-            Image Source: The Kangxi Emperor's Southern Inspection Tour, Scroll Three: Ji'nan to Mount Tai
-          </p>
+          <p className="text-sm text-gray-500 italic mt-2">{dailySource}</p>
         </header>
 
         {/* Subtitle */}
@@ -56,9 +56,9 @@ export default function HomePage() {
                 <option value="" disabled>
                   Choose a teacher
                 </option>
-                <option value="/teachers/jesus">Jesus</option>
+                <option value="/teachers/jesus">Jesus | The Gospels</option>
                 <option value="/teachers/krishna">Krishna | The Bhagavad Gita</option>
-                <option value="https://dailytao.org">Lao Tzu | dailytao.org</option>
+                <option value="https://dailytao.org">Lao Tzu | DailyTao.org</option>
                 <option value="/teachers/zhuangzi">Zhuangzi</option>
                 <option value="/teachers/alan-watts">Alan Watts</option>
                 <option value="/teachers/eckhart-tolle">Eckhart Tolle</option>
@@ -78,21 +78,17 @@ export default function HomePage() {
         {/* Footer */}
         <footer className="text-left text-sm text-gray-500 border-t border-gray-200 pt-6">
           <p>
-            <a href="/add-to-home" className="text-blue-500 hover:underline">
+            <a href="/add-to-home" className="text-gray-500 hover:underline">
               Add to Home Screen
             </a>{" "}
             |{" "}
-            <a href="/help-choosing-a-teacher" className="text-blue-500 hover:underline">
-              About the Teachers
-            </a>{" "}
-            |{" "}
-            <a href="/request-teacher" className="text-blue-500 hover:underline">
+            <a href="/request-teacher" className="text-gray-500 hover:underline">
               Request a Teacher
             </a>
           </p>
           <p className="text-gray-400 italic">
             This website was inspired by{" "}
-            <a href="https://dailytao.org" className="text-blue-500 hover:underline">
+            <a href="https://dailytao.org" className="text-gray-500 hover:underline">
               DailyTao.org
             </a>
           </p>

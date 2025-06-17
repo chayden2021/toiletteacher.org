@@ -1,4 +1,7 @@
 {
+  "/request-teacher/page": "app/request-teacher/page.js",
+  "/teachers/alan-watts/page": "app/teachers/alan-watts/page.js",
   "/page": "app/page.js",
+  "/add-to-home/page": "app/add-to-home/page.js",
   "/teachers/krishna/page": "app/teachers/krishna/page.js"
 }

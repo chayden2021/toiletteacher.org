@@ -1,0 +1,8 @@
+export const imageLibrary = [
+  {
+    path: "/images/kangxi-emporer-southern-inspection-tour-scroll-three.jpg",
+    source: "The Kangxi Emperor's Southern Inspection Tour, Scroll Three: Ji'nan to Mount Tai",
+  },
+
+  // Add more images and sources here
+];
